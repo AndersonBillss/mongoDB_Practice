@@ -9,6 +9,7 @@ app.use(express.json())
 app.use(express.static('public'))
 // Database connection
 const { mongoURI } = require('./config/database');
+console.log(mongoURI)
 mongoose.connect(mongoURI);
 
 //any request http://localhost:300/api/users
